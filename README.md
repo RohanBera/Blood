@@ -5,9 +5,9 @@ Front-end
 
 ## Plans 
 
-- [ ] Make a basic HMTL-only page
-> - [ ] Drop downs and a submit button
-- [ ] Add some css
+- [x] Make a basic HMTL-only page
+> - [x] Drop downs and a submit button
+- [x] Add some css
 > - [ ] That text-slide-show thing on top
 - [ ] Include a map
 - [ ] Shift to Angular or react or something ??
