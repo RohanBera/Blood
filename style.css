@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding : 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+}
+
+#body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background-color: #ffdedb;
+    height : 69px;
+    width : 100%;
+    margin : 0;
+}
+
+#slideshow {
+    background-color: #fe8176;
+    color : #a70f01;
+    height : 69px;
+    width : 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 69px;
+}
+
+#search {
+    background-color: white;
+    height : 90vh;
+    width: 100%;
+}
+
+#register {
+    background-color: #340d09;
+    height: 90vh;
+    width: 100%;
+}
