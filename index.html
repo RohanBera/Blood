@@ -13,7 +13,9 @@
 
     <body>
         <section id="header">
-
+            <div class="logo">
+                <img src="pics/blood.png" alt="" height="100%">
+            </div>
         </section>
 
         <section id="slideshow">
@@ -21,25 +23,81 @@
         </section>
 
         <section id="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-30">
+                        <form action="">
+                            <label for="bgroup">Select Blood group</label>
+                            <select name="bgroup" id="bgroup">
+                                <option value="A+">A+</option>
+                                <option value="O+">O+</option>
+                            </select>
+                
+                            <label for="city">Select City</label>
+                            <select name="city" id="city">
+                                <option value="hyderabad">Hyderabad</option>
+                            </select>
 
+                            <input type="submit" value="Search">
+
+                        </form>
+                    </div>
+
+                    <div class="col-70">
+
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="register">
+            <div class="container">
+                <div class="row">
 
+                    <div class="col-50" style="color: white; padding: 50px 10px;">
+                        <h1 style="font-size: 8vw;">Be a hero.</h1>
+                        <h3 style="font-size: 6vw;" >A real one.</h3>
+                        <h5 style="font-size: 3vw; font-weight: 100;">Register and become a certified blood donor.</h5>
+
+                    </div>
+
+                    <div class="col-50">
+                        <form action="" style="color: white;">
+                            <label for="dname">Name</label>
+                            <input type="text" id="dname" name="firstname" placeholder="Your name..">
+
+                            <label for="age">Age</label>
+                            <input type="text" id="age" name="age" placeholder="Your age..">
+
+                            <label for="bl_group">Blood Group</label>
+                            <select name="bl_group" id="bl_group">
+                                <option value="O+">O+</option>
+                                <option value="A+">A+</option>
+                            </select>
+
+                            <label for="addr">Address</label>
+                            <textarea name="address" id="addr" placeholder="Your address.." style="height: 200px;"></textarea>
+
+                            <label for="phno">Contact Number</label>
+                            <input type="text" id="phno" name="cnct_num" placeholder="Your contact number..">
+
+                            <input type="submit" value="Register">
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
 
         </section>
 
-        <form action="">
-            <select name="bgroup" id="bgroup">
-                <option value="A+">A+</option>
-                <option value="O+">O+</option>
-            </select>
+        <br><br><br><br>
 
-            <select name="city" id="city">
-                <option value="hyderabad">Hyderabad</option>
-            </select>
 
-            <input type="submit" value="Search">
-        </form>
+        <section id="footer">
+            Without doubt my favorite part in a website 
+        </section>
+
     </body>
 </html>
