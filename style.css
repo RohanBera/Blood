@@ -63,6 +63,37 @@ form {
     padding: 10px 10%;
 }
 
+#register h1 {
+    font-size: 7vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#register h3 {
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#register h5 {
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    #register h1 {
+        font-size: 14vw;
+    }
+
+    #register h3 {
+        font-size: 12vw;
+    }
+
+    #register h5 { 
+        font-size: 6vw;
+    }
+  }
+
+
 /* containers and columns */
 
 .container {
@@ -108,15 +139,30 @@ form {
 input[type=text], select, textarea {
     width : 100%;
     padding : 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background-color: white;
+    outline: none;  /* to remove that default border */
+    border: 3px solid #ccc;
     resize: vertical;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    border: 3px solid #fe7186;
+}
+
+textarea:focus {
+    border: 3px solid #fe7186;
+}
+
+select:focus {
+    border: 3px solid #fe7186;
 }
 
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-  }
+}
   
 input[type=submit] {
     background-color: #fe2712;
@@ -125,7 +171,6 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     margin-top: 20px;
-    border-radius: 4px;
     cursor: pointer;
 }
 
