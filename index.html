@@ -7,6 +7,13 @@
         <meta name="description" content="">
         <meta name="keywords" content="blood,india,bloodgroup,donate,donateblood">
 
+        <script>
+            function framesize() {
+                document.getElementById('search-results').style.height = "400px";
+            }
+
+        </script>
+
         <!-- Main style sheet file -->
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -26,16 +33,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-30">
-                        <form action="">
+                        <form action="pimpom.html" onsubmit="framesize();" target="search-results">
                             <label for="bgroup">Select Blood group</label>
-                            <select name="bgroup" id="bgroup">
+                            <select name="bgroup" id="bgroup" required>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
                                 <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
                             </select>
                 
                             <label for="city">Select City</label>
-                            <select name="city" id="city">
+                            <select name="city" id="city" required>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="hyderabad">Hyderabad</option>
                             </select>
@@ -46,7 +59,8 @@
                     </div>
 
                     <div class="col-70">
-
+                        <iframe id="search-results" name="search-results" src="" frameborder="0" width="100%" height="0"> 
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -64,25 +78,31 @@
                     </div>
 
                     <div class="col-50">
-                        <form action="" style="color: white;">
+                        <form action="reg.php" style="color: white;">
                             <label for="dname">Name</label>
-                            <input type="text" id="dname" name="firstname" placeholder="Your name..">
+                            <input type="text" id="dname" name="firstname" placeholder="Your name.." required>
 
                             <label for="age">Age</label>
-                            <input type="text" id="age" name="age" placeholder="Your age..">
+                            <input type="text" id="age" name="age" placeholder="Your age.." required>
 
                             <label for="bl_group">Blood Group</label>
-                            <select name="bl_group" id="bl_group">
+                            <select name="bl_group" id="bl_group" required>
                                 <option disabled selected value> -- select an option -- </option>
-                                <option value="O+">O+</option>
                                 <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
                             </select>
 
                             <label for="addr">Address</label>
-                            <textarea name="address" id="addr" placeholder="Your address.." style="height: 200px;"></textarea>
+                            <textarea name="address" id="addr" placeholder="Your address.." style="height: 200px;" required></textarea>
 
                             <label for="phno">Contact Number</label>
-                            <input type="text" id="phno" name="cnct_num" placeholder="Your contact number..">
+                            <input type="text" id="phno" name="cnct_num" placeholder="Your contact number.." required>
 
                             <input type="submit" value="Register">
 
