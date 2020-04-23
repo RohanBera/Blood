@@ -18,6 +18,7 @@ table, tr, th, td {
 }
 
 table {
+    margin-bottom: 40px;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
