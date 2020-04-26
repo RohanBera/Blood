@@ -81,14 +81,20 @@ th {
 
 #footer {
     background-color: black;
+    /* background-color: #333; */
     color: white;
     /* height: 100px; */
     padding: 50px 300px;
     width: 100%;
+    box-shadow: 0px 0px 50px black;
 }
 
 #footer h2 {
     margin: 20px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-variant: small-caps ;
+    font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
     color: #fe8176;
 }
@@ -112,18 +118,25 @@ th {
 
 #footer p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
 }
 
 #footer a {
     padding: 15px 20px 15px 10px;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #ffecc8;
     color: orangered;
     font-weight: 800;
     text-transform: capitalize;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition-duration: 800ms;
+}
+
+#footer a:hover {
+    background-color: #fdbc71;
 }
 
 @media screen and (max-width: 1000px) {
@@ -153,6 +166,19 @@ th {
 
     padding: 10px 10%;
 }
+
+#search h1 {
+    color: #340d09;
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    #search h1 {
+        font-size: 14vw;
+    }
+  }
+
 
 #register {
     background-color: #340d09;
@@ -271,6 +297,7 @@ input[type=submit] {
     border: none;
     margin-top: 20px;
     cursor: pointer;
+    transition-duration: 800ms;
 }
 
 input[type=submit]:hover {
