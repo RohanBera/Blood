@@ -77,15 +77,74 @@ th {
     line-height: 69px;
 }
 
+/* Footer */
+
 #footer {
     background-color: black;
     color: white;
-    height: 100px;
+    /* height: 100px; */
+    padding: 50px 300px;
     width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
 }
+
+#footer h2 {
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fe8176;
+}
+
+#footer h1 {
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4vw;
+}
+
+#footer i {
+    color: #fe8176;
+    padding: 10px 10px;
+}
+
+#footer i#gitlab {
+    color: orangered;
+    font-size: 20px;
+}
+
+#footer p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#footer a {
+    padding: 15px 20px 15px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffecc8;
+    color: orangered;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    #footer {
+        padding: 50px;
+    }
+    #footer h1 {
+        font-size: 5vw;
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+    #footer {
+        padding: 50px;
+    }
+
+    #footer h1 {
+        font-size: 11vw;
+    }
+  }
 
 #search {
     background-color: white;
